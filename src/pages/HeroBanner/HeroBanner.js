@@ -13,6 +13,7 @@ const HeroBanner = () => {
         </div>
       </HeroText>
       <HeroImage>
+        <div className="image"></div>
         <BgCircle />
       </HeroImage>
       <BgCircle />

@@ -35,9 +35,22 @@ export const HeroImage = styled.div`
   padding: 0rem 2rem;
   width: 70%;
   height: 100%;
-  background-image: url("https://images.prismic.io/ueno-www/fa980adb-f824-42d6-aae0-6df1d38aa6fc_espn-poster.jpg?auto=compress,format");
-  background-size: cover;
-  background-position: 0 0;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  &:hover {
+    transform: scale(0.95);
+    .image {
+      transform: scale(1.2);
+    }
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    background: url("https://images.prismic.io/ueno-www/fa980adb-f824-42d6-aae0-6df1d38aa6fc_espn-poster.jpg?auto=compress,format")
+      no-repeat center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+  }
 `;
 
 export const BgCircle = styled.div`
